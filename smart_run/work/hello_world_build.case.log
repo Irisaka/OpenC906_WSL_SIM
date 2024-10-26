@@ -1,0 +1,17 @@
+vtimer.c: In function 'sim_end':
+vtimer.c:35:12: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   35 |   END_ADDR = 0x6000FFF8;
+      |            ^
+intc.c: In function 'ck_intc_init':
+intc.c:19:35: warning: initialization of 'int *' from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   19 | #define TCIP_BASE                 0xE0000000
+      |                                   ^~~~~~~~~~
+intc.c:26:14: note: in expansion of macro 'TCIP_BASE'
+   26 |  int *picr = TCIP_BASE;
+      |              ^~~~~~~~~
+intc.c:20:35: warning: initialization of 'int *' from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define CLIC_BASE                 0xE0800000
+      |                                   ^~~~~~~~~~
+intc.c:30:22: note: in expansion of macro 'CLIC_BASE'
+   30 |         int *piser = CLIC_BASE+INTIE+0x10;
+      |                      ^~~~~~~~~

@@ -22,13 +22,6 @@ limitations under the License.
 
 
 
-
-
-
-
-
-
-
 module axi_slave128(
   araddr_s0,
   arburst_s0,
@@ -173,31 +166,6 @@ wire             wready_s0;
 wire             write_over;     
 wire    [15 :0]  wstrb_s0;       
 wire             wvalid_s0;      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -513,17 +481,10 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-assign mem_cen_0 = !((mem_addr[23] == 1'b0) && !mem_cen);
-assign mem_cen_1 = !((mem_addr[23] == 1'b1) && !mem_cen);
+// assign mem_cen_0 = !((mem_addr[23] == 1'b0) && !mem_cen);
+// assign mem_cen_1 = !((mem_addr[23] == 1'b1) && !mem_cen);
+assign mem_cen_0 = !((mem_addr[19] == 1'b0) && !mem_cen);
+assign mem_cen_1 = !((mem_addr[19] == 1'b1) && !mem_cen);
 
 always @ (posedge pll_core_cpuclk or negedge pad_cpu_rst_b)
 begin
@@ -557,9 +518,39 @@ begin
 end
 
 
+// f_spsram_524288x128  x_f_spsram_524288x128_L (
+//   .A                 (mem_addr[22:4]   ),
+//   .CEN               (mem_cen_0        ),
+//   .CLK               (pll_core_cpuclk  ),
+//   .D                 (mem_din[127:0]   ),
+//   .Q                 (mem_dout_0[127:0]),
+//   .WEN               (mem_wen[15:0]    )
+// );
 
-f_spsram_524288x128  x_f_spsram_524288x128_L (
-  .A                 (mem_addr[22:4]   ),
+
+
+// f_spsram_524288x128  x_f_spsram_524288x128_H (
+//   .A                 (mem_addr[22:4]   ),
+//   .CEN               (mem_cen_1        ),
+//   .CLK               (pll_core_cpuclk  ),
+//   .D                 (mem_din[127:0]   ),
+//   .Q                 (mem_dout_1[127:0]),
+//   .WEN               (mem_wen[15:0]    )
+// );
+
+
+
+// f_spsram_32768x128  x_f_spsram_32768x128_L (
+//   .A                 (mem_addr[18:4]   ),
+//   .CEN               (mem_cen_0        ),
+//   .CLK               (pll_core_cpuclk  ),
+//   .D                 (mem_din[127:0]   ),
+//   .Q                 (mem_dout_0[127:0]),
+//   .WEN               (mem_wen[15:0]    )
+// );
+
+init_f_spsram_32768x128  x_f_spsram_32768x128_L (
+  .A                 (mem_addr[18:4]   ),
   .CEN               (mem_cen_0        ),
   .CLK               (pll_core_cpuclk  ),
   .D                 (mem_din[127:0]   ),
@@ -567,19 +558,8 @@ f_spsram_524288x128  x_f_spsram_524288x128_L (
   .WEN               (mem_wen[15:0]    )
 );
 
-
-
-
-
-
-
-
-
-
-
-
-f_spsram_524288x128  x_f_spsram_524288x128_H (
-  .A                 (mem_addr[22:4]   ),
+f_spsram_32768x128  x_f_spsram_32768x128_H (
+  .A                 (mem_addr[18:4]   ),
   .CEN               (mem_cen_1        ),
   .CLK               (pll_core_cpuclk  ),
   .D                 (mem_din[127:0]   ),
@@ -587,29 +567,7 @@ f_spsram_524288x128  x_f_spsram_524288x128_H (
   .WEN               (mem_wen[15:0]    )
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// assign mem_dout_1[127:0] = 0;
 
 endmodule
 

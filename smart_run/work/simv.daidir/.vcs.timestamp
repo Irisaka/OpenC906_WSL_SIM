@@ -1,0 +1,406 @@
+0 
+39
++define+TSMC_NO_WARNING
++define+no_warning
++itf+/opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
++nospecify
++notimingchecks
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/Synopsys/vcs/O-2018.09-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags=-L/usr/lib/x86_64-linux-gnu -L/lib/x86_64-linux-gnu -Wl,--no-as-needed -rdynamic
+-Mobjects= /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/opt/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/opt/Synopsys/vcs/O-2018.09-SP2/include
+-P
+-Xufe=2steps
+-debug_access
+-f ../logical/filelists/sim.fl
+-fsdb
+-full64
+-gen_obj
+-kdb
+-l
+-lca
+-picarchive
+-sverilog
+-timescale=1ns/100fs
+/opt/Synopsys/vcs/O-2018.09-SP2/linux64/bin/vcs1
+/opt/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+comp.vcs.log
+54
+sysc_uni_pwd=/home/why/openc906/smart_run/work
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+WSL_INTEROP=/run/WSL/17868_interop
+WSL_DISTRO_NAME=Ubuntu
+WSLENV=
+WSL2_GUI_APPS_ENABLED=1
+WAYLAND_DISPLAY=wayland-0
+VMR_MODE_FLAG=64
+VERDI_HOME=/opt/Synopsys/verdi/Verdi_O-2018.09-SP2
+VERDI_DIR=/opt/Synopsys/verdi/Verdi_O-2018.09-SP2
+VCS_TARGET_ARCH=amd64
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=comp.vcs.log
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/opt/Synopsys/vcs/O-2018.09-SP2
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/opt/Synopsys/vcs/O-2018.09-SP2/linux64
+TOOL_EXTENSION=/opt/Xuantie-900-gcc-elf-newlib-x86_64-V2.10.2/bin
+SSH_TTY=/dev/pts/2
+SSH_CONNECTION=127.0.0.1 59914 127.0.0.1 22011
+SSH_CLIENT=127.0.0.1 59914 22011
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie  -Wl,--no-as-needed 
+SNPS_VCS_INTERNAL_LINKER_NEEDS_NO_AS_NEEDED=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+OVA_UUM=0
+NPI_PLATFORM=LINUX64_GNU_472
+NOVAS_INST_DIR=/opt/Synopsys/verdi/Verdi_O-2018.09-SP2
+NOVAS_HOME=/opt/Synopsys/verdi/Verdi_O-2018.09-SP2
+NAME=DESKTOP-GBLEEBE
+MOTD_SHOWN=update-motd
+MFLAGS=-s
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
+MAKEOVERRIDES=${-*-command-variables-*-}
+MAKELEVEL=2
+MAKEFLAGS=s -- CASE=hello_world
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+LIBGL_ALWAYS_INDIRECT=1
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_ALL=C
+HOSTTYPE=x86_64
+DVE_HOME=/opt/Synopsys/vcs/O-2018.09-SP2/gui/dve
+CPATH=/usr/include/x86_64-linux-gnu
+CODE_BASE_PATH=/home/why/openc906/C906_RTL_FACTORY
+CASE=hello_world
+ALL_PROXY=http://172.31.64.1:7890
+0
+301
+1729825622 ../logical/uart/uart_trans.v
+1729825621 ../logical/uart/uart_receive.v
+1729825621 ../logical/uart/uart_ctrl.v
+1729825621 ../logical/uart/uart_baud_gen.v
+1729825621 ../logical/uart/uart_apb_reg.v
+1729825621 ../logical/gpio/gpio_ctrl.v
+1729825621 ../logical/gpio/gpio_apbif.v
+1729825621 ../logical/common/wid_entry.v
+1729825621 ../logical/uart/uart.v
+1729825621 ../logical/mem/f_spsram_32768x128.v
+1729825621 ../logical/gpio/gpio.v
+1729825621 ../logical/common/tr_axi_interconnect.v
+1729825621 ../logical/common/timer.v
+1729825620 ../logical/common/fifo_counter.v
+1729825620 ../logical/clk/fpga_clk_gen.v
+1729825620 ../logical/bus/bus_delay.v
+1729825620 ../logical/axi/axi_fifo_entry.v
+1729825620 ../logical/apb/apb_bridge.v
+1729825620 ../logical/ahb/ahb2apb.v
+1729846675 ../logical/mem/mem_ctrl.v
+1729825620 ../logical/common/err_gen.v
+1729825620 ../logical/common/cpu_sub_system_axi.v
+1729829799 ../logical/axi/axi_slave128.v
+1729825620 ../logical/axi/axi_interconnect128.v
+1729825620 ../logical/axi/axi_fifo.v
+1729846600 ../logical/axi/axi_err128.v
+1729825620 ../logical/axi/axi2ahb.v
+1729825620 ../logical/apb/apb.v
+1729825620 ../logical/ahb/ahb.v
+1729825621 ../logical/common/soc.v
+1729846721 ../logical/tb/tb.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/common/tdt_gated_clk_cell.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_top.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_io.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_idr.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_ctrl.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_chain.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi_top.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dmi_sync_dff.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi_rst_top.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dmi_pulse_sync.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_apb_master.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi_define.h
+1729826073 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/new/init_ram.v
+1729826247 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/new/init_f_spsram_32768x128.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_top.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_sba_axi.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dm_top.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dm_sync_dff.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dm_pulse_sync.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dm.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/common/rtl/sync_level2level.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_top.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_kid_busif.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_int_kid.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_hreg_busif.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_hart_arb.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_granu_arb.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_granu2_arb.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_ctrl.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_arb_ctrl.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_32to1_arb.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/multiplier_33x33_partial.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/mp_top_golden_port.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/fpga_ram.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/csky_apb_1tox_matrix.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/clint/rtl/clint_top.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/clint/rtl/clint_func.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/booth_code_54_bit.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/booth_code_33_bit.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_viq_dp.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_top.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_srcv_type.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_group_unit.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_fwd_wb_rbus.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_vtb_entry.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_vtb.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_top.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_st_align_buffer.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_rot_data.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_lsu_if.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_ld_align_buffer.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_data_trans.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_wbt_entry.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_wbt.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_split_fp.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_gpr_reg_fp.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_gpr_fp.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_dp_fp.v
+1729825720 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_ctrl_fp.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_top.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_top.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_special_judge_double.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_multiplier_53x27_partial.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_mult_double.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_mult.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_lza_double.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_frac_shift_double.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_frac_mult.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_dp.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_ctrl.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdiv/rtl/aq_vdsp_8_bit_ff1.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_vdsp_64_bit_ff1.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_top.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_sysio_top.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_sysio_kid.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_spsram_64x98.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_spsram_64x88.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_spsram_64x58.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_spsram_256x59.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_spsram_2048x32.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_spsram_128x8.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_spsram_1024x64.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_spsram_1024x16.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_wb.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_top.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_retire.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_rbus.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_int.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_dp.v
+1729825716 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_ctrl.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_prio.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_top.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_regs.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_comp_hit.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_acc.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/openC906.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/rst/rtl/aq_mp_rst_top.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/clk/rtl/aq_mp_clk_top.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_utlb_top.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_utlb_entry.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_utlb.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_top.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_tlboper.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_sysmap_hit.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_sysmap.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_regs.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_ptw.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_plru.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_jtlb_tag_array.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_jtlb_data_array.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_jtlb.v
+1729825714 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_arb.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_vb.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_top.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_stb_entry.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_stb.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_rdl.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_pfb_top.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_pfb.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_mcic.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_lm.v
+1729825713 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_lfb_entry.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_lfb.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_icc.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_dtif.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_dc.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_arb.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_amr.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_amo_alu.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_ag.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_left_shift_64.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_top.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_mul.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_div_shift2_kernel.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_div.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_bju.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_alu.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_addr_gen.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_vec.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_top.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ras_entry.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ras.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_pred.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_pre_decd.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_pcgen.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ipack_entry.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ipack.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_icache_tag_array.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_icache_data_array.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_icache.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ibuf_pop_entry.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ibuf_entry.v
+1729825711 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ibuf.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ctrl.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_btb_entry.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_btb.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_bht_array.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_bht.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_top.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_wbt_entry.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_wbt.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_split.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_gpr_gated_reg.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_gpr.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_dp.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_decd.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_ctrl.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_expand_32.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_top.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_event.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_cntof_reg.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_cntinten_reg.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_cnt.v
+1729825715 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_adder_sel.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fspu_top.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_top.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_srt.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_special.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_scalar_dp.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_scalar_ctrl.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_round.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_right_shift.v
+1729825719 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_prepare.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_pack.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_double_dp.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_double.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_denorm_shift.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_xtoh_sh.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_top.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_scalar_dp.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_ftoi_d.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_dtos_d.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_double.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_ctrl.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_falu_top.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_falu_ctrl.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_shift_sub_single.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_shift_sub_h_double.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_scalar_dp.v
+1729825718 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_lop_s1_sb.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_top.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_special.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_round.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_dp.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_cmp_max.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_add.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_64x98.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_64x88.v
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_64x58.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_256x59.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_2048x32.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_128x8.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_1024x64.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_1024x16.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_trigger_module.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_top.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_pcfifo.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_mcontrol_output_select.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_mcontrol.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_m_iie_all.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_iie_trigger.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_dbginfo.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_ctrl.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cdc_pulse.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cdc_lvl.v
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cdc.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_top.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_tag_array.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_dirty_array.v
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_data_array.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_cpuio_top.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_vector_inst.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_trap_csr.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_top.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_special.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_rst_ctrl.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_regs.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_prtc_csr.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_lpmd.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_iui.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_info_csr.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_hpcp_csr.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_float_csr.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_fence_inst.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_ext_csr.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_cache_inst.v
+1729825708 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_core.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_wt_entry.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_write_channel.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_top.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_req_arbiter.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_read_channel.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_apbif.v
+1729825707 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/common/rtl/BUFGCE.v
+1729825717 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_define.h
+1729844544 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/sysmap.h
+1729825712 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_cfig.h
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cfig.h
+1729825710 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_cfig.h
+1729825709 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/cpu_cfig.h
+1729825997 ../logical/filelists/tb.fl
+1729825997 ../logical/filelists/smart.fl
+1729826011 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/filelists/tdt_dmi_top_rtl.fl
+1729826142 /home/why/openc906/C906_RTL_FACTORY/gen_rtl/filelists/C906_asic_rtl.fl
+1729825996 ../logical/filelists/ip.fl
+1729825996 ../logical/filelists/sim.fl
+1550753332 /opt/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1551421246 /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcsdp_lite.tab
+4
+1551422344 /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvirsim.so
+1551421792 /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so
+1551421768 /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
+1551421789 /opt/Synopsys/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
+1729926352 simv.daidir
+-1 partitionlib

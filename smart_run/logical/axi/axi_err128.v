@@ -21,18 +21,6 @@ limitations under the License.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 module axi_err128(
   araddr_s1,
   arburst_s1,
@@ -170,30 +158,6 @@ wire             wready_s1;
 wire             write_over;     
 wire    [15 :0]  wstrb_s1;       
 wire             wvalid_s1;      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -509,14 +473,14 @@ end
 
 
 
-f_spsram_32768x128  x_f_spsram_32768x128_L (
-  .A               (mem_addr[18:4] ),
-  .CEN             (1'b1           ),
-  .CLK             (pll_core_cpuclk),
-  .D               (mem_din[127:0] ),
-  .Q               (mem_dout[127:0]),
-  .WEN             (mem_wen[15:0]  )
-);
+// f_spsram_32768x128  x_f_spsram_32768x128_L (
+//   .A               (mem_addr[18:4] ),
+//   .CEN             (1'b1           ),
+//   .CLK             (pll_core_cpuclk),
+//   .D               (mem_din[127:0] ),
+//   .Q               (mem_dout[127:0]),
+//   .WEN             (mem_wen[15:0]  )
+// );
 
 
 

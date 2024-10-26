@@ -15,30 +15,6 @@ limitations under the License.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module mem_ctrl(
   haddr_s1,
   hburst_s1,
@@ -179,13 +155,8 @@ reg     [15 :0]  ram_wen_pre;
 reg              raw_data_vld;         
 
 
-
-
-
-
-
-
-parameter MEM_ADDR_WIDTH = 24;
+// parameter MEM_ADDR_WIDTH = 24;
+parameter MEM_ADDR_WIDTH = 14;
 
 assign hclk             = pll_core_cpuclk;
 assign hrst_b           = pad_cpu_rst_b;
@@ -444,114 +415,114 @@ assign hrdata[127:0] = raw_data_vld ? hrdata_raw[127:0] : hrdata_pre[127:0];
 
 
 /* {{{ memory unit instance */
-ram #(8, MEM_ADDR_WIDTH-4) ram0(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram0(
   .PortAClk (ram_clk[0]),
-  .PortAAddr(ram0_addr),
+  .PortAAddr(ram0_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram0_din),
   .PortAWriteEnable(ram_wen[0]),
   .PortADataOut(ram0_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram1(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram1(
   .PortAClk (ram_clk[1]),
-  .PortAAddr(ram1_addr),
+  .PortAAddr(ram1_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram1_din),
   .PortAWriteEnable(ram_wen[1]),
   .PortADataOut(ram1_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram2(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram2(
   .PortAClk (ram_clk[2]),
-  .PortAAddr(ram2_addr),
+  .PortAAddr(ram2_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram2_din),
   .PortAWriteEnable(ram_wen[2]),
   .PortADataOut(ram2_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram3(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram3(
   .PortAClk (ram_clk[3]),
-  .PortAAddr(ram3_addr),
+  .PortAAddr(ram3_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram3_din),
   .PortAWriteEnable(ram_wen[3]),
   .PortADataOut(ram3_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram4(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram4(
   .PortAClk (ram_clk[4]),
-  .PortAAddr(ram4_addr),
+  .PortAAddr(ram4_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram4_din),
   .PortAWriteEnable(ram_wen[4]),
   .PortADataOut(ram4_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram5(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram5(
   .PortAClk (ram_clk[5]),
-  .PortAAddr(ram5_addr),
+  .PortAAddr(ram5_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram5_din),
   .PortAWriteEnable(ram_wen[5]),
   .PortADataOut(ram5_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram6(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram6(
   .PortAClk (ram_clk[6]),
-  .PortAAddr(ram6_addr),
+  .PortAAddr(ram6_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram6_din),
   .PortAWriteEnable(ram_wen[6]),
   .PortADataOut(ram6_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram7(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram7(
   .PortAClk (ram_clk[7]),
-  .PortAAddr(ram7_addr),
+  .PortAAddr(ram7_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram7_din),
   .PortAWriteEnable(ram_wen[7]),
   .PortADataOut(ram7_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram8(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram8(
   .PortAClk (ram_clk[8]),
-  .PortAAddr(ram8_addr),
+  .PortAAddr(ram8_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram8_din),
   .PortAWriteEnable(ram_wen[8]),
   .PortADataOut(ram8_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram9(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram9(
   .PortAClk (ram_clk[9]),
-  .PortAAddr(ram9_addr),
+  .PortAAddr(ram9_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram9_din),
   .PortAWriteEnable(ram_wen[9]),
   .PortADataOut(ram9_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram10(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram10(
   .PortAClk (ram_clk[10]),
-  .PortAAddr(ram10_addr),
+  .PortAAddr(ram10_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram10_din),
   .PortAWriteEnable(ram_wen[10]),
   .PortADataOut(ram10_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram11(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram11(
   .PortAClk (ram_clk[11]),
-  .PortAAddr(ram11_addr),
+  .PortAAddr(ram11_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram11_din),
   .PortAWriteEnable(ram_wen[11]),
   .PortADataOut(ram11_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram12(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram12(
   .PortAClk (ram_clk[12]),
-  .PortAAddr(ram12_addr),
+  .PortAAddr(ram12_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram12_din),
   .PortAWriteEnable(ram_wen[12]),
   .PortADataOut(ram12_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram13(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram13(
   .PortAClk (ram_clk[13]),
-  .PortAAddr(ram13_addr),
+  .PortAAddr(ram13_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram13_din),
   .PortAWriteEnable(ram_wen[13]),
   .PortADataOut(ram13_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram14(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram14(
   .PortAClk (ram_clk[14]),
-  .PortAAddr(ram14_addr),
+  .PortAAddr(ram14_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram14_din),
   .PortAWriteEnable(ram_wen[14]),
   .PortADataOut(ram14_dout));
 
-ram #(8, MEM_ADDR_WIDTH-4) ram15(
+fpga_ram #(8, MEM_ADDR_WIDTH-4) ram15(
   .PortAClk (ram_clk[15]),
-  .PortAAddr(ram15_addr),
+  .PortAAddr(ram15_addr[MEM_ADDR_WIDTH-5:0]),
   .PortADataIn (ram15_din),
   .PortAWriteEnable(ram_wen[15]),
   .PortADataOut(ram15_dout));

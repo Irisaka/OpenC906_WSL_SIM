@@ -194,6 +194,7 @@ uint32_t ck_uart_putc(p_ck_uart_device uart_device, uint8_t c)
     if (uart_device->txmode == DISABLE)
         return 1;
     // wait until uart transmit buffer is empty
+
     while (!((*(reg8_t*)(uart_device->register_map+CK_UART_LSR)) & CK_LSR_TRANS_EMPTY));
 
     *(reg8_t*)(uart_device->register_map+CK_UART_THR) = c;
@@ -209,7 +210,7 @@ uint32_t ck_uart_status(p_ck_uart_device uart_device)
 {
     uint8_t uart_lsr;
     return 0;
-    //uart_lsr = *(reg8_t*)(uart_device->register_map+CK_UART_LSR);
+    uart_lsr = *(reg8_t*)(uart_device->register_map+CK_UART_LSR);
     if (uart_lsr & CK_LSR_TEMT)
         return 0;
     else

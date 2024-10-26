@@ -20,7 +20,7 @@ limitations under the License.
 
 //#define FAPB    10000000L
 #define BAUD    19200L
-#define UART0_BASE_ADDR  0x40015000
+#define UART0_BASE_ADDR  0x10015000
 /* UART registers addr definition */
 #define CK_UART_RBR       0x00    /* Receive Buffer Register (32 bits, R) */
 #define CK_UART_THR       0x00    /* Transmit Holding Register (32 bits, W) */

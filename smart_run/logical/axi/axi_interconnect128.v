@@ -15,28 +15,9 @@ limitations under the License.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module axi_interconnect128(
   aclk,
+  
   araddr,
   aresetn,
   arready,
@@ -49,6 +30,7 @@ module axi_interconnect128(
   arvalid_s1,
   arvalid_s2,
   arvalid_s3,
+
   awaddr,
   awid,
   awready,
@@ -61,6 +43,7 @@ module axi_interconnect128(
   awvalid_s1,
   awvalid_s2,
   awvalid_s3,
+
   bid,
   bid_s0,
   bid_s1,
@@ -81,6 +64,7 @@ module axi_interconnect128(
   bvalid_s1,
   bvalid_s2,
   bvalid_s3,
+
   rdata,
   rdata_s0,
   rdata_s1,
@@ -111,6 +95,7 @@ module axi_interconnect128(
   rvalid_s1,
   rvalid_s2,
   rvalid_s3,
+
   wid,
   wlast,
   wready,

@@ -1,0 +1,489 @@
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '5.15.153.1-microsoft-standard-WSL2' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+Command: vcs -sverilog -full64 -kdb -lca -debug_access +nospecify +notimingchecks \
+-timescale=1ns/100fs +define+no_warning +define+TSMC_NO_WARNING -f ../logical/filelists/sim.fl \
+-l comp.vcs.log
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP2_Full64 -- Sat Oct 26 15:05:43 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/cpu_cfig.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_cfig.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cfig.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_cfig.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/sysmap.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_define.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/common/rtl/BUFGCE.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_apbif.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_read_channel.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_req_arbiter.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_write_channel.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/biu/rtl/aq_biu_wt_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_core.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_cache_inst.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_ext_csr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_fence_inst.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_float_csr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_hpcp_csr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_info_csr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_iui.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_lpmd.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_prtc_csr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_regs.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_rst_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_special.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_trap_csr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cp0/rtl/aq_cp0_vector_inst.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_cpuio_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_data_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_dirty_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_tag_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_dcache_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cdc.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cdc_lvl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_cdc_pulse.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_dbginfo.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_iie_trigger.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_m_iie_all.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_mcontrol.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_mcontrol_output_select.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_pcfifo.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/dtu/rtl/aq_dtu_trigger_module.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_1024x16.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_1024x64.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_128x8.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_2048x32.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_256x59.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_64x58.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_64x88.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/aq_f_spsram_64x98.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_add.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_cmp_max.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_round.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_special.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_double_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_lop_s1_sb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_scalar_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_shift_sub_h_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fadd_shift_sub_single.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_falu_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_falu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_dtos_d.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_ftoi_d.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_scalar_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fcnvt_xtoh_sh.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_denorm_shift.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_double_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_pack.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_prepare.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_right_shift.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_round.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_scalar_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_scalar_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_special.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_srt.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfdsu/rtl/aq_fdsu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_fspu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_adder_sel.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_cnt.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_cntinten_reg.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_cntof_reg.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_event.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmu/rtl/aq_hpcp_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_expand_32.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_decd.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_gpr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_gpr_gated_reg.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_split.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_wbt.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_id_wbt_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/idu/rtl/aq_idu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_bht.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_bht_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_btb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_btb_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ibuf.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ibuf_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ibuf_pop_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_icache.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_icache_data_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_icache_tag_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ipack.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ipack_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_pcgen.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_pre_decd.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_pred.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ras.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_ras_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_ifu_vec.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_addr_gen.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_alu.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_bju.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_div.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_div_shift2_kernel.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_mul.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/aq_iu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_left_shift_64.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_ag.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_amo_alu.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_amr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_arb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_dc.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_dtif.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_icc.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_lfb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_lfb_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_lm.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_mcic.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_pfb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_pfb_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_rdl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_stb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_stb_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_lsu_vb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_arb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_jtlb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_jtlb_data_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_jtlb_tag_array.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_plru.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_ptw.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_regs.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_sysmap.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_sysmap_hit.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_tlboper.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_utlb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_utlb_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_mmu_utlb_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/clk/rtl/aq_mp_clk_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rst/rtl/aq_mp_rst_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/openC906.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_acc.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_comp_hit.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_regs.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/pmp/rtl/aq_pmp_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_prio.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_int.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_rbus.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_retire.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/rtu/rtl/aq_rtu_wb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_spsram_1024x16.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_spsram_1024x64.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_spsram_128x8.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_spsram_2048x32.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/ifu/rtl/aq_spsram_256x59.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_spsram_64x58.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_spsram_64x88.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/mmu/rtl/aq_spsram_64x98.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_sysio_kid.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_sysio_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/aq_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfalu/rtl/aq_vdsp_64_bit_ff1.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdiv/rtl/aq_vdsp_8_bit_ff1.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_frac_mult.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_frac_shift_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_lza_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_mult.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_mult_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_multiplier_53x27_partial.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_special_judge_double.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/aq_vfmau_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_ctrl_fp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_dp_fp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_gpr_fp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_gpr_reg_fp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_split_fp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_wbt.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vidu/rtl/aq_vidu_vid_wbt_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_data_trans.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_ld_align_buffer.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_lsu_if.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_rot_data.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_st_align_buffer.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_vtb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/lsu/rtl/aq_vlsu_vtb_entry.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_fwd_wb_rbus.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_group_unit.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_srcv_type.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vdsp/rtl/aq_vpu_viq_dp.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/booth_code_33_bit.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/vfmau/rtl/booth_code_54_bit.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/clint/rtl/clint_func.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/clint/rtl/clint_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/csky_apb_1tox_matrix.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/fpga/rtl/fpga_ram.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/cpu/rtl/mp_top_golden_port.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/iu/rtl/multiplier_33x33_partial.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_32to1_arb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_arb_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_granu2_arb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_granu_arb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_hart_arb.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_hreg_busif.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_int_kid.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_kid_busif.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/plic/rtl/plic_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/common/rtl/sync_level2level.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dm.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dm_pulse_sync.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dm_sync_dff.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dm_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_sba_axi.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/new/init_f_spsram_32768x128.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/new/init_ram.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi_define.h'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_apb_master.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dmi_pulse_sync.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi_rst_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dmi_sync_dff.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/top/tdt_dmi_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_chain.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_ctrl.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_idr.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_io.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/debug/tdt_dtm_top.v'
+Parsing design file '/home/why/openc906/C906_RTL_FACTORY/gen_rtl/tdt/rtl/common/tdt_gated_clk_cell.v'
+Parsing design file '../logical/tb/tb.v'
+Parsing library directory file '../logical/common/soc.v'
+Parsing library directory file '../logical/ahb/ahb.v'
+Parsing library directory file '../logical/apb/apb.v'
+Parsing library directory file '../logical/axi/axi2ahb.v'
+Parsing library directory file '../logical/axi/axi_err128.v'
+Parsing library directory file '../logical/axi/axi_fifo.v'
+Parsing library directory file '../logical/axi/axi_interconnect128.v'
+Parsing library directory file '../logical/axi/axi_slave128.v'
+Parsing library directory file '../logical/common/cpu_sub_system_axi.v'
+Parsing library directory file '../logical/common/err_gen.v'
+Parsing library directory file '../logical/mem/mem_ctrl.v'
+Parsing library directory file '../logical/ahb/ahb2apb.v'
+Parsing library directory file '../logical/apb/apb_bridge.v'
+Parsing library directory file '../logical/axi/axi_fifo_entry.v'
+Parsing library directory file '../logical/bus/bus_delay.v'
+Parsing library directory file '../logical/clk/fpga_clk_gen.v'
+Parsing library directory file '../logical/common/fifo_counter.v'
+Parsing library directory file '../logical/common/timer.v'
+Parsing library directory file '../logical/common/tr_axi_interconnect.v'
+Parsing library directory file '../logical/gpio/gpio.v'
+Parsing library directory file '../logical/mem/f_spsram_32768x128.v'
+Parsing library directory file '../logical/uart/uart.v'
+Parsing library directory file '../logical/common/wid_entry.v'
+Parsing library directory file '../logical/gpio/gpio_apbif.v'
+Parsing library directory file '../logical/gpio/gpio_ctrl.v'
+Parsing library directory file '../logical/uart/uart_apb_reg.v'
+Parsing library directory file '../logical/uart/uart_baud_gen.v'
+Parsing library directory file '../logical/uart/uart_ctrl.v'
+Parsing library directory file '../logical/uart/uart_receive.v'
+Parsing library directory file '../logical/uart/uart_trans.v'
+Top Level Modules:
+       mp_top_golden_port
+       tb
+TimeScale is 1 ns / 100 fs
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+161 modules and 0 UDP read.
+recompiling module aq_biu_top
+recompiling module aq_biu_wt_entry
+recompiling module aq_cp0_ext_csr
+recompiling module aq_cp0_float_csr
+recompiling module aq_cp0_hpcp_csr
+recompiling module aq_cp0_info_csr
+recompiling module aq_cp0_iui
+recompiling module aq_cp0_prtc_csr
+recompiling module aq_cp0_special
+recompiling module aq_cp0_top
+recompiling module aq_cpuio_top
+recompiling module aq_dcache_data_array
+recompiling module aq_dcache_tag_array
+recompiling module aq_dcache_top
+recompiling module aq_dtu_cdc
+recompiling module aq_dtu_cdc_lvl
+recompiling module aq_dtu_cdc_pulse
+recompiling module aq_dtu_dbginfo
+recompiling module aq_dtu_iie_trigger
+recompiling module aq_dtu_mcontrol
+recompiling module aq_dtu_pcfifo
+recompiling module aq_dtu_top
+recompiling module aq_fadd_double_cmp_max
+recompiling module aq_fadd_double_dp
+recompiling module aq_fadd_double_round
+recompiling module aq_fadd_double_special
+recompiling module aq_fadd_scalar_dp
+recompiling module aq_fadd_shift_sub_h_double
+recompiling module aq_fadd_shift_sub_single
+recompiling module aq_falu_ctrl
+recompiling module aq_fcnvt_ctrl
+recompiling module aq_fcnvt_dtos_d
+recompiling module aq_fcnvt_scalar_dp
+recompiling module aq_fcnvt_top
+recompiling module aq_fcnvt_xtoh_sh
+recompiling module aq_fdsu_double_dp
+recompiling module aq_fdsu_pack
+recompiling module aq_fdsu_right_shift
+recompiling module aq_fdsu_scalar_ctrl
+recompiling module aq_fdsu_scalar_dp
+recompiling module aq_fdsu_top
+recompiling module aq_fspu_top
+recompiling module aq_hpcp_adder_sel
+recompiling module aq_hpcp_cnt
+recompiling module aq_hpcp_cntinten_reg
+recompiling module aq_hpcp_cntof_reg
+recompiling module aq_hpcp_event
+recompiling module aq_hpcp_top
+recompiling module aq_idu_expand_32
+recompiling module aq_idu_id_ctrl
+50 of 161 modules done
+recompiling module aq_idu_id_dp
+recompiling module aq_idu_id_gpr
+recompiling module aq_idu_id_gpr_gated_reg
+recompiling module aq_idu_id_split
+recompiling module aq_idu_id_wbt
+recompiling module aq_idu_id_wbt_entry
+recompiling module aq_idu_top
+recompiling module aq_ifu_btb
+recompiling module aq_ifu_btb_entry
+recompiling module aq_ifu_ibuf_entry
+recompiling module aq_ifu_ibuf_pop_entry
+recompiling module aq_ifu_ipack
+recompiling module aq_ifu_ipack_entry
+recompiling module aq_ifu_pred
+recompiling module aq_ifu_ras_entry
+recompiling module aq_ifu_top
+recompiling module aq_ifu_vec
+recompiling module aq_iu_addr_gen
+recompiling module aq_iu_bju
+recompiling module aq_iu_div
+recompiling module aq_left_shift_64
+recompiling module aq_lsu_amo_alu
+recompiling module aq_lsu_amr
+recompiling module aq_lsu_arb
+recompiling module aq_lsu_dtif
+recompiling module aq_lsu_icc
+recompiling module aq_lsu_lfb
+recompiling module aq_lsu_lfb_entry
+recompiling module aq_lsu_lm
+recompiling module aq_lsu_mcic
+recompiling module aq_lsu_pfb
+recompiling module aq_lsu_pfb_top
+recompiling module aq_lsu_rdl
+recompiling module aq_lsu_stb
+recompiling module aq_lsu_stb_entry
+recompiling module aq_lsu_top
+recompiling module aq_lsu_vb
+recompiling module aq_mmu_jtlb
+recompiling module aq_mmu_ptw
+recompiling module aq_mmu_sysmap
+recompiling module aq_mmu_sysmap_hit
+recompiling module aq_mmu_top
+recompiling module aq_mmu_utlb
+recompiling module aq_mmu_utlb_entry
+recompiling module aq_mp_rst_top
+recompiling module aq_pmp_comp_hit
+recompiling module aq_pmp_top
+recompiling module aq_rtu_int
+recompiling module aq_rtu_top
+recompiling module aq_rtu_wb
+100 of 161 modules done
+recompiling module aq_spsram_2048x32
+recompiling module aq_spsram_64x58
+recompiling module aq_sysio_top
+recompiling module aq_vdsp_64_bit_ff1
+recompiling module aq_vdsp_8_bit_ff1
+recompiling module aq_vfmau_lza_double
+recompiling module aq_vfmau_multiplier_53x27_partial
+recompiling module aq_vfmau_top
+recompiling module aq_vidu_top
+recompiling module aq_vidu_vid_gpr_reg_fp
+recompiling module aq_vidu_vid_wbt_entry
+recompiling module aq_vlsu_data_trans
+recompiling module aq_vlsu_rot_data
+recompiling module aq_vlsu_top
+recompiling module aq_vlsu_vtb
+recompiling module aq_vlsu_vtb_entry
+recompiling module aq_vpu_fwd_wb_rbus
+recompiling module aq_vpu_group_unit
+recompiling module aq_vpu_srcv_type
+recompiling module aq_vpu_top
+recompiling module aq_vpu_viq_dp
+recompiling module booth_code_33_bit
+recompiling module booth_code_54_bit
+recompiling module clint_top
+recompiling module csky_apb_1tox_matrix
+recompiling module fpga_ram
+recompiling module gated_clk_cell
+recompiling module mp_top_golden_port
+recompiling module nor_sel
+recompiling module plic_granu2_arb
+recompiling module plic_granu_arb
+recompiling module prio_sel
+recompiling module plic_hart_arb
+recompiling module plic_int_kid
+recompiling module plic_kid_busif
+recompiling module instance_reg_flog
+recompiling module plic_top
+recompiling module sync_level2level
+recompiling module tdt_dm_pulse_sync
+recompiling module tdt_sba_axi
+recompiling module tdt_top
+recompiling module init_ram
+recompiling module tdt_dmi_pulse_sync
+recompiling module tdt_dmi_top
+recompiling module tb
+recompiling module ahb
+recompiling module apb
+recompiling module axi2ahb
+recompiling module axi_err128
+recompiling module axi_fifo
+150 of 161 modules done
+recompiling module axi_interconnect128
+recompiling module axi_slave128
+recompiling module err_gen
+recompiling module mem_ctrl
+recompiling module axi_fifo_entry
+recompiling module bus_delay
+recompiling module fpga_clk_gen
+recompiling module fifo_counter
+recompiling module timer
+recompiling module counter
+recompiling module wid_entry
+All of 161 modules done
+../simv up to date

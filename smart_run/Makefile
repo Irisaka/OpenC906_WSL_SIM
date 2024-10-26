@@ -19,8 +19,8 @@ include ./setup/env_check.mk
 ################################################################################
 # Simulation related
 ################################################################################
-SIM = iverilog
-DUMP = off
+SIM = vcs
+DUMP = on
 
 ifeq ($(DUMP), on)
 SIM_DUMP :=

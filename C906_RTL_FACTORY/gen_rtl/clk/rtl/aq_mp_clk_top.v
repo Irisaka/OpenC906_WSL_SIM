@@ -76,7 +76,7 @@ assign apb_clk_en = pad_yy_scan_mode ? 1'b1 : apb_clk_en_f;
 
 // &Force("output","apb_clk"); @54
 
-BUFGCE apb_clk_buf
+BUFGCE_OV apb_clk_buf
 (.O   (apb_clk),
  .I   (forever_cpuclk),
  .CE  (apb_clk_en_f)

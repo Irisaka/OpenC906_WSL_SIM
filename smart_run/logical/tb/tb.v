@@ -29,8 +29,8 @@ limitations under the License.
 `define MAX_RUN_TIME        700000000
 
 `define SOC_TOP             tb.x_soc
-`define RTL_MEM             tb.x_soc.x_axi_slave128.x_f_spsram_524288x128_L
-`define RTL_MEM2            tb.x_soc.x_axi_slave128.x_f_spsram_524288x128_H
+`define RTL_MEM             tb.x_soc.x_axi_slave128.x_f_spsram_32768x128_L
+`define RTL_MEM2            tb.x_soc.x_axi_slave128.x_f_spsram_32768x128_H
 
 
 
@@ -95,6 +95,7 @@ begin
   #400;
   jrst_b = 1;
 end
+
 
 integer i;
   bit [31:0] mem_inst_temp [65536];
@@ -282,7 +283,8 @@ begin
   end
 
   else if((cpu_awlen[3:0] == 4'b0) &&
-     (cpu_awaddr[31:0] == 32'h10015000) &&
+    //  (cpu_awaddr[31:0] == 32'h10015000) &&
+     (cpu_awaddr[31:0] == 32'h90000000) &&
       cpu_wvalid)
   begin
    FILE = $fopen("run_case.report","a");

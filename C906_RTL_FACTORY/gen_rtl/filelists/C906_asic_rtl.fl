@@ -245,4 +245,5 @@ ${CODE_BASE_PATH}/gen_rtl/tdt/rtl/debug/tdt_dm_sync_dff.v
 ${CODE_BASE_PATH}/gen_rtl/tdt/rtl/top/tdt_dm_top.v
 ${CODE_BASE_PATH}/gen_rtl/tdt/rtl/debug/tdt_sba_axi.v
 ${CODE_BASE_PATH}/gen_rtl/tdt/rtl/top/tdt_top.v
-
+${CODE_BASE_PATH}/gen_rtl/new/init_f_spsram_32768x128.v
+${CODE_BASE_PATH}/gen_rtl/new/init_ram.v

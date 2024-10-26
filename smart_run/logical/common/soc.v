@@ -319,43 +319,6 @@ cpu_sub_system_axi  x_cpu_sub_system_axi (
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 assign pad_cpu_rst_b = i_pad_rst_b & i_pad_jtg_nrst_b;
 assign pll_core_cpuclk =  i_pad_clk;
 
@@ -368,31 +331,6 @@ assign uart0_sin = i_pad_uart0_sin;
 
 assign o_pad_jtg_tdo = dtm_pad_jtg_tdo;
 assign o_pad_uart0_sout = uart0_sout;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -495,33 +433,6 @@ axi_interconnect128  x_axi_interconnect (
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 axi_fifo  x_axi_fifo (
   .biu_pad_araddr   (biu_pad_araddr  ),
   .biu_pad_arburst  (biu_pad_arburst ),
@@ -555,20 +466,6 @@ axi_fifo  x_axi_fifo (
   .fifo_pad_arvalid (fifo_pad_arvalid),
   .pad_biu_arready  (pad_biu_arready )
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -616,73 +513,6 @@ axi_slave128  x_axi_slave128 (
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 axi_err128  x_axi_err (
   .araddr_s1        (fifo_pad_araddr ),
   .arburst_s1       (fifo_pad_arburst),
@@ -721,33 +551,6 @@ axi_err128  x_axi_err (
   .wstrb_s1         (biu_pad_wstrb   ),
   .wvalid_s1        (wvalid_s1       )
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -814,59 +617,6 @@ axi2ahb  x_axi2ahb (
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 axi_err128  x_axi_err1 (
   .araddr_s1        (fifo_pad_araddr ),
   .arburst_s1       (fifo_pad_arburst),
@@ -905,46 +655,6 @@ axi_err128  x_axi_err1 (
   .wstrb_s1         (biu_pad_wstrb   ),
   .wvalid_s1        (wvalid_s3       )
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1068,9 +778,6 @@ apb  x_apb (
   .uart0_sout       (uart0_sout      ),
   .xx_intc_vld      (xx_intc_vld     )
 );
-
-
-
 
 
 

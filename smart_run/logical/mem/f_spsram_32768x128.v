@@ -191,7 +191,7 @@ assign Q[14*WRAP_WIDTH-1:13*WRAP_WIDTH]  = ram13_dout[WRAP_WIDTH-1:0];
 assign Q[15*WRAP_WIDTH-1:14*WRAP_WIDTH]  = ram14_dout[WRAP_WIDTH-1:0];
 assign Q[16*WRAP_WIDTH-1:15*WRAP_WIDTH]  = ram15_dout[WRAP_WIDTH-1:0];
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram0(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram0(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram0_din),
@@ -199,28 +199,28 @@ ram #(WRAP_WIDTH,ADDR_WIDTH) ram0(
   .PortADataOut(ram0_dout));
 
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram1(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram1(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram1_din),
   .PortAWriteEnable(ram1_wen),
   .PortADataOut(ram1_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram2(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram2(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram2_din),
   .PortAWriteEnable(ram2_wen),
   .PortADataOut(ram2_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram3(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram3(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram3_din),
   .PortAWriteEnable(ram3_wen),
   .PortADataOut(ram3_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram4(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram4(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram4_din),
@@ -228,77 +228,77 @@ ram #(WRAP_WIDTH,ADDR_WIDTH) ram4(
   .PortADataOut(ram4_dout));
 
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram5(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram5(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram5_din),
   .PortAWriteEnable(ram5_wen),
   .PortADataOut(ram5_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram6(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram6(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram6_din),
   .PortAWriteEnable(ram6_wen),
   .PortADataOut(ram6_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram7(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram7(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram7_din),
   .PortAWriteEnable(ram7_wen),
   .PortADataOut(ram7_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram8(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram8(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram8_din),
   .PortAWriteEnable(ram8_wen),
   .PortADataOut(ram8_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram9(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram9(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram9_din),
   .PortAWriteEnable(ram9_wen),
   .PortADataOut(ram9_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram10(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram10(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram10_din),
   .PortAWriteEnable(ram10_wen),
   .PortADataOut(ram10_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram11(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram11(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram11_din),
   .PortAWriteEnable(ram11_wen),
   .PortADataOut(ram11_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram12(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram12(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram12_din),
   .PortAWriteEnable(ram12_wen),
   .PortADataOut(ram12_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram13(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram13(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram13_din),
   .PortAWriteEnable(ram13_wen),
   .PortADataOut(ram13_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram14(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram14(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram14_din),
   .PortAWriteEnable(ram14_wen),
   .PortADataOut(ram14_dout));
 
-ram #(WRAP_WIDTH,ADDR_WIDTH) ram15(
+fpga_ram #(WRAP_WIDTH,ADDR_WIDTH) ram15(
   .PortAClk (CLK),
   .PortAAddr(addr),
   .PortADataIn (ram15_din),
